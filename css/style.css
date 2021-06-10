@@ -2,6 +2,7 @@ body{
     color: #fff;
     font-family: 'Roboto', sans-serif;
     padding-top: 40px;
+    background-color: #14131A;
 }
 
 .container{
@@ -96,5 +97,119 @@ cursor: pointer;
 }
 /*Картинка крови*/
 .blood{
-    background: url('../img/blood.png') no-repeat top right, #14131A url('../img/fon.png') no-repeat center center / 100%;
+    background: url('../img/blood.png') no-repeat top right, #14131A ;
+}
+
+/*Страница о фильме*/
+/*Две колонки*/
+.content{
+    display: flex;
+}
+/*Оформление колонок*/
+.col{
+flex-basis: 50%;
+}
+/*Стили*/
+/*Стиль заголовка О фильме*/
+.content-title{
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+color: rgba(255, 255, 255, 0.8);
+margin-bottom: 20px;
+}
+/*Стиль текста О фильме*/
+.content-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;   
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 423px;
+    margin-bottom: 30px;
+    
+}
+
+/*Стиль В главных ролях*/
+.content-subtitle{
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+color: rgba(255, 255, 255, 0.8);
+margin-bottom: 15px;
+margin-top: 0px;
+}
+/*Стиль Актеров*/
+.content-text{
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+/*Стилизация списка*/
+.content .list{
+    list-style-type: none;
+    padding:0px;
+}
+/*Расстояние между элементами*/
+.list-item{
+    line-height: 1.5;
+}
+/*Деление списка актеров на две колонки*/
+.column-2{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    max-width: 350px;
+}
+/*Трейлер*/
+.content .trailer{
+    width: 356px;
+    height: 205px;
+    background: url(../img/trailer.png) no-repeat center / contain;
+    border-radius: 5px;
+    display: flex; /*Значок плэй по центру*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+    margin-bottom: 10px;
+}
+/*Кнопка плэй внутри трейлера*/
+.trailer .play{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+/*Значок плей по центру*/
+.trailer .play-icon{
+    transform: translate(1px, 2px);
+}
+
+/*Вторая колонка с постером*/
+.poster-wrapper{
+    display: flex;
+    align-items: start;
+}
+
+/*Постер*/
+.poster{
+    max-width: 362px;
+    border-radius:5px;
+    margin-right: 30px;
+}
+
+.poster-wrapper .content-subtitle{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.poster-wrapper .list{
+    margin: 0px;
+    margin-bottom: 20px;
 }
