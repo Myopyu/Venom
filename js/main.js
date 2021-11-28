@@ -14,3 +14,10 @@ menuCloseButton.addEventListener("click",()=>{
     menu.classList.remove("is-active");
     menuCloseButton.classList.remove("is-active");
 });
+
+/*Ошибка при заказе билетов*/ 
+const mistake = document.querySelector(".message");
+
+mistake.addEventListener("click",()=>{
+    alert("Билетов больше нет")
+});
